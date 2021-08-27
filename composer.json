@@ -1,0 +1,36 @@
+{
+    "name": "ancientec/password-policy",
+    "description": "helper function to generate password policies and validate against password",
+    "keywords": [
+        "password",
+        "policy",
+        "rules",
+        "validation"
+    ],
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Ancientec Co., Ltd.",
+        "email": "info@ancientec.com"
+    }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ancientec\\PasswordPolicy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ancientec\\PasswordPolicy\\PasswordPolicyServiceProvider"
+            ]
+        }
+    }
+}
